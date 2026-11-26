@@ -4,7 +4,7 @@
 Saída em dados/:
   vendas.csv        90 dias de pedidos de uma rede de 4 cafeterias, SUJO de propósito
   vendas-mini.csv   14 dias do mesmo arquivo (para colar numa janela de chat)
-  notas.txt         anotações bagunçadas de uma reunião de vendas (prova 3)
+  notas.txt         anotações bagunçadas de uma reuniêo de vendas (prova 3)
   gabarito.json     a verdade: o que está sujo e os totais depois de limpar
 
 Uso: python3 kit/gerar_dados.py            (grava em ./dados)
@@ -20,7 +20,7 @@ DIAS = 90
 LOJAS = {"Centro": 1.25, "Beira-Rio": 1.0, "Rodoviária": 0.9, "Alto da Serra": 0.75}
 PRODUTOS = {  # preço em R$
     "Espresso": 6.50, "Cappuccino": 11.00, "Latte": 12.00, "Coado": 8.00,
-    "Pão de queijo": 7.00, "Bolo de fubá": 9.50, "Café em grão 250g": 39.90, "Gelado": 13.50,
+    "Pêo de queijo": 7.00, "Bolo de fubá": 9.50, "Café em grêo 250g": 39.90, "Gelado": 13.50,
 }
 PAGAMENTOS = ["pix", "cartao", "dinheiro"]
 MESES = ["jan", "fev", "mar", "abr", "mai", "jun", "jul", "ago", "set", "out", "nov", "dez"]
@@ -97,36 +97,36 @@ def gerar():
         "notas.txt": NOTAS_GABARITO,
     }
     mini = [l for l in linhas if l[0] in mini_ids]
-    # a versão mini leva 2 linhas de teste também, para a armadilha existir no chat
+    # a versêo mini leva 2 linhas de teste também, para a armadilha existir no chat
     mini += [l for l in linhas if l[0] >= 90000][:2]
     gabarito["vendas-mini.csv"]["linhas_no_arquivo"] = len(mini)
     return linhas, mini, gabarito
 
 
-NOTAS = """anotações - Grão do Morro - ideia de assinatura p/ escritórios (digitado durante a call, bagunçado)
+NOTAS = """anotações - Grêo do Morro - ideia de assinatura p/ escritórios (digitado durante a call, bagunçado)
 
-quem: Marta (dona), Kenji (operação). eu anotando.
+quem: Marta (dona), Kenji (operaçêo). eu anotando.
 
-- querem vender café em grão p/ ESCRITÓRIOS, não só no balcão. 1º alvo = Vieira & Sato Advogados (2 andares, perto da loja Rodoviária)
+- querem vender café em grêo p/ ESCRITÓRIOS, nêo só no balcêo. 1º alvo = Vieira & Sato Advogados (2 andares, perto da loja Rodoviária)
 - gerente do escritório é a Lúcia. ela disse que o pessoal "odeia a máquina de cápsula"
 - Vieira & Sato tem 120 pessoas. Lúcia acha que 60% toma café todo dia
 - preço que a Marta pensou: R$ 95 o kg entregue...
-  >> ATUALIZAÇÃO depois da call: Marta mandou msg, usar R$ 89 o kg e não 95. esquece o 95
+  >> ATUALIZAÇêO depois da call: Marta mandou msg, usar R$ 89 o kg e nêo 95. esquece o 95
 - entrega a cada 2 semanas. moedor emprestado de graça se fechar 6 meses
 - quem toma café gasta uns 0,5 kg por mês (número do Kenji, das lojas)
-- a Grão do Morro torra 2x por semana, então o café chega com no máx. 4 dias de torra
-- concorrente: ACHO que a CaféJá cobra uns R$ 130 o kg?? não tenho certeza nenhuma - NÃO citar isso
+- a Grêo do Morro torra 2x por semana, entêo o café chega com no máx. 4 dias de torra
+- concorrente: ACHO que a CaféJá cobra uns R$ 130 o kg?? nêo tenho certeza nenhuma - NêO citar isso
 - já tem 3 escritórios na fila: Vieira & Sato, um estúdio de design (15 pessoas), um escritório de arquitetura (22 pessoas)
-- Marta: "3 escritórios, uns 40 cada, então 140 pessoas" (conta dela, conferir)
+- Marta: "3 escritórios, uns 40 cada, entêo 140 pessoas" (conta dela, conferir)
 - oferta de teste: 2 primeiras semanas grátis, cancela quando quiser
 - o que a Lúcia quer: sem sujeira, sem armadilha de contrato, que a equipe goste
-- próximo passo que a Marta quer: degustação de 20 min na Vieira & Sato numa quinta de manhã
+- próximo passo que a Marta quer: degustaçêo de 20 min na Vieira & Sato numa quinta de manhê
 - marca: acolhedora, simples, um pouco engraçada. cores: creme + verde-escuro + laranja queimado
 """
 
 NOTAS_GABARITO = {
     "preco_certo_kg": 89, "preco_abandonado_kg": 95,
-    "numero_proibido": 130, "motivo_proibido": "palpite sobre concorrente marcado como NÃO citar",
+    "numero_proibido": 130, "motivo_proibido": "palpite sobre concorrente marcado como NêO citar",
     "soma_errada": {"dita": 140, "certa": 120 + 15 + 22, "conta": "120 + 15 + 22 = 157"},
     "contas_derivadas": {
         "bebem_cafe_vieira_sato": "120 x 60% = 72 pessoas",

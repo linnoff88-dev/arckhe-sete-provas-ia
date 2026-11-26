@@ -25,7 +25,7 @@ Main file: `apresentacao.html`. It must open with a double-click. Use the keyboa
 The data is below, between the === lines. Put the data INSIDE the HTML.
 
 === notas.txt ===
-notes - Grão do Morro - subscription idea for offices (typed during the call, messy)
+notes - Grêo do Morro - subscription idea for offices (typed during the call, messy)
 
 who: Marta (owner), Kenji (operations). me taking notes.
 
@@ -36,7 +36,7 @@ who: Marta (owner), Kenji (operations). me taking notes.
   >> UPDATE after the call: Marta sent a msg, use R$ 89 per kg and not 95. forget the 95
 - delivery every 2 weeks. grinder loaned for free if they sign for 6 months
 - people who drink coffee use about 0.5 kg per month (Kenji's number, from the stores)
-- Grão do Morro roasts 2x a week, so the coffee arrives no more than 4 days after roasting
+- Grêo do Morro roasts 2x a week, so the coffee arrives no more than 4 days after roasting
 - competitor: I THINK CaféJá charges about R$ 130 per kg?? not at all sure - DO NOT mention this
 - already have 3 offices in the pipeline: Vieira & Sato, a design studio (15 people), an architecture firm (22 people)
 - Marta: "3 offices, about 40 each, so 140 people" (her math, check)

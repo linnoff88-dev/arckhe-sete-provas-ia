@@ -3,8 +3,8 @@
 
 Formas:
   agente  -> Claude Code, Codex, Cursor, Antigravity... (trabalha numa pasta, grava arquivos)
-  chat    -> Agnes, ChatGPT, Gemini, Claude.ai... (sem pasta: devolve um HTML só; dados vão colados no pedido)
-  pessoa  -> sem IA: briefing para uma pessoa ou equipe, com tempo sugerido e ficha de avaliação
+  chat    -> Agnes, ChatGPT, Gemini, Claude.ai... (sem pasta: devolve um HTML só; dados vêo colados no pedido)
+  pessoa  -> sem IA: briefing para uma pessoa ou equipe, com tempo sugerido e ficha de avaliaçêo
 
 Uso: python3 kit/montar.py            grava prompts/<idioma>/<forma>/NN-slug.md e atualiza os guias
      python3 kit/montar.py --conferir  só confere se o que está no disco está atualizado

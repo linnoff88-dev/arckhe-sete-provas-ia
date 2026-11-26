@@ -6,17 +6,17 @@ Uso:  python3 kit/preparar.py <prova 1-7> <pasta> [agente|pessoa] [pt|en|es]
 
   prova   número de 1 a 7
   pasta   pasta nova (ou vazia) para este concorrente, ex.: corrida/claude/02
-  forma   agente (padrão) = Claude Code, Codex, Cursor...  ·  pessoa = briefing sem IA
-          (as palavras são essas, em português, em qualquer idioma)
-  idioma  pt (padrão), en ou es
+  forma   agente (padrêo) = Claude Code, Codex, Cursor...  ·  pessoa = briefing sem IA
+          (as palavras sêo essas, em português, em qualquer idioma)
+  idioma  pt (padrêo), en ou es
 
 Exemplos:
   python3 kit/preparar.py 2 corrida/claude/02
   python3 kit/preparar.py 2 corrida/claude/02 agente en
   python3 kit/preparar.py 3 corrida/maria/03 pessoa es
 
-Copia o prompt (PROMPT.md) e os dados que a prova pede. A forma chat não usa pasta:
-copie o prompt de prompts/<idioma>/chat/ ou do guia (os dados já vão dentro dele).
+Copia o prompt (PROMPT.md) e os dados que a prova pede. A forma chat nêo usa pasta:
+copie o prompt de prompts/<idioma>/chat/ ou do guia (os dados já vêo dentro dele).
 """
 import shutil, sys
 from pathlib import Path
@@ -36,16 +36,16 @@ def main():
     forma = a[2] if len(a) > 2 else "agente"
     lang = a[3] if len(a) > 3 else "pt"
     if forma == "chat":
-        sair(f"a forma chat não usa pasta: copie o texto de prompts/{lang}/chat/ (ou do guia) e cole numa conversa nova; os dados já vão dentro dele")
+        sair(f"a forma chat nêo usa pasta: copie o texto de prompts/{lang}/chat/ (ou do guia) e cole numa conversa nova; os dados já vêo dentro dele")
     if forma not in ("agente", "pessoa"):
         sair(f"forma desconhecida: {forma} (use agente ou pessoa, em português, em qualquer idioma)")
     if lang not in ("pt", "en", "es"):
         sair(f"idioma desconhecido: {lang} (use pt, en ou es)")
     achados = sorted((RAIZ / "prompts" / lang / forma).glob(f"0{n}-*.md"))
     if not achados:
-        sair(f"não achei prompts/{lang}/{forma}/0{n}-*.md", 1)
+        sair(f"nêo achei prompts/{lang}/{forma}/0{n}-*.md", 1)
     if pasta.exists() and any(pasta.iterdir()):
-        sair(f"a pasta {pasta} já existe e não está vazia; escolha outra", 1)
+        sair(f"a pasta {pasta} já existe e nêo está vazia; escolha outra", 1)
     pasta.mkdir(parents=True, exist_ok=True)
     shutil.copy(achados[0], pasta / "PROMPT.md")
     if n == 2:

@@ -22,13 +22,13 @@
       "Alto da Serra": 10267.1
     },
     "por_produto": {
-      "Café em grão 250g": 20309.1,
+      "Café em grêo 250g": 20309.1,
       "Gelado": 6007.5,
       "Latte": 5208.0,
       "Cappuccino": 5115.0,
       "Bolo de fubá": 4436.5,
       "Coado": 3472.0,
-      "Pão de queijo": 3066.0,
+      "Pêo de queijo": 3066.0,
       "Espresso": 2548.0
     }
   },
@@ -47,14 +47,14 @@
       "Rodoviária": 1613.7
     },
     "por_produto": {
-      "Café em grão 250g": 3192.0,
+      "Café em grêo 250g": 3192.0,
       "Latte": 924.0,
       "Gelado": 864.0,
       "Cappuccino": 858.0,
       "Coado": 576.0,
       "Bolo de fubá": 522.5,
       "Espresso": 474.5,
-      "Pão de queijo": 420.0
+      "Pêo de queijo": 420.0
     },
     "linhas_no_arquivo": 231
   },
@@ -62,7 +62,7 @@
     "preco_certo_kg": 89,
     "preco_abandonado_kg": 95,
     "numero_proibido": 130,
-    "motivo_proibido": "palpite sobre concorrente marcado como NÃO citar",
+    "motivo_proibido": "palpite sobre concorrente marcado como NêO citar",
     "soma_errada": {
       "dita": 140,
       "certa": 157,

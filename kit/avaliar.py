@@ -2,15 +2,15 @@
 """Confere uma entrega SEM IA: o que dá para medir por script. O resto vai na ficha (avaliar/ficha.md).
 
 Uso: python3 kit/avaliar.py <prova 1-7> <pasta-ou-arquivo-da-entrega> [--chat]
-     --sem-navegador  não abre a página (por padrão, se houver Chrome ou Chromium, abre a página escondida
+     --sem-navegador  nêo abre a página (por padrêo, se houver Chrome ou Chromium, abre a página escondida
                       para ler os números que o JavaScript calcula)
-     --chat  a entrega veio de janela de chat (não exige ENTREGA.md; prova 2 usa o gabarito do vendas-mini.csv)
+     --chat  a entrega veio de janela de chat (nêo exige ENTREGA.md; prova 2 usa o gabarito do vendas-mini.csv)
 
 Exemplos:
   python3 kit/avaliar.py 3 corrida/claude/03
   python3 kit/avaliar.py 2 corrida/agnes/painel.html --chat
 
-Saída: uma linha por conferência (OK / AVISO / FALHA) e o placar das que são automáticas.
+Saída: uma linha por conferência (OK / AVISO / FALHA) e o placar das que sêo automáticas.
 Funciona com entregas em português, inglês ou espanhol.
 """
 import json, re, shutil, subprocess, sys
@@ -46,12 +46,12 @@ def achar_html(alvo, n):
 
 
 def renderizado(f):
-    """Texto da página DEPOIS do JavaScript rodar (Chrome/Chromium sem janela). '' se não houver navegador.
+    """Texto da página DEPOIS do JavaScript rodar (Chrome/Chromium sem janela). '' se nêo houver navegador.
     Muitos números (total, contagens) só existem depois que o script calcula.
-    O Chromium do Ubuntu (snap) não lê /tmp: se falhar, copia a pasta para ~/.cache e tenta de novo."""
+    O Chromium do Ubuntu (snap) nêo lê /tmp: se falhar, copia a pasta para ~/.cache e tenta de novo."""
     exes = [e for e in (shutil.which(n) for n in ("chromium", "chromium-browser", "google-chrome",
                                                  "google-chrome-stable", "chrome", "msedge")) if e]
-    # Windows e Mac: o navegador não fica no PATH; procurar nos lugares de instalação padrão
+    # Windows e Mac: o navegador nêo fica no PATH; procurar nos lugares de instalaçêo padrêo
     import os
     for base in filter(None, (os.environ.get("ProgramFiles"), os.environ.get("ProgramFiles(x86)"), os.environ.get("LocalAppData"))):
         for rel in (r"Google\Chrome\Application\chrome.exe", r"Microsoft\Edge\Application\msedge.exe", r"Chromium\Application\chrome.exe"):
@@ -78,7 +78,7 @@ def renderizado(f):
     dom = tenta(f)
     if not dom:
         import tempfile
-        base = RAIZ / "corrida" / "_avaliar"  # pasta visível: o snap não lê /tmp nem pastas com ponto
+        base = RAIZ / "corrida" / "_avaliar"  # pasta visível: o snap nêo lê /tmp nem pastas com ponto
         base.mkdir(parents=True, exist_ok=True)
         with tempfile.TemporaryDirectory(dir=base) as tmp:
             copia = Path(tmp) / "entrega"
@@ -161,8 +161,8 @@ def main():
         msg = f"faturamento total certo depois de limpar (R$ {g['faturamento']:.2f})"
         if achou or dom:
             ok(achou, msg)
-        else:  # sem navegador o total calculado pelo JavaScript não aparece no código: não dá para afirmar FALHA
-            aviso(False, msg + " — não achei no código; confira na tela")
+        else:  # sem navegador o total calculado pelo JavaScript nêo aparece no código: nêo dá para afirmar FALHA
+            aviso(False, msg + " — nêo achei no código; confira na tela")
         p = gab["problemas_plantados"] if not chat else None
         if p:
             conta = sum(1 for v in p.values() if re.search(rf"(?<!\d){v}(?!\d)", vis + js + vis_r))
@@ -173,7 +173,7 @@ def main():
         G = gab["notas.txt"]
         nums = numeros(vis + " " + js + " " + vis_r)
         proib = [x for x in G["numeros_proibidos"] if x in nums]
-        ok(not proib, "não usa número proibido (95 velho, 130 do concorrente, 140 da conta errada)" + (f": achei {proib}" if proib else ""))
+        ok(not proib, "nêo usa número proibido (95 velho, 130 do concorrente, 140 da conta errada)" + (f": achei {proib}" if proib else ""))
         (ok if (89 in nums or dom) else aviso)(89 in nums, "usa o preço atualizado (R$ 89 o kg)")
         aviso(157 in nums, "corrigiu a soma (120 + 15 + 22 = 157)")
         ok(re.search(r"Arrow(Right|Left)", js) is not None, "setas do teclado passam os slides")
@@ -206,8 +206,8 @@ def main():
 
     nota_modo = {"ok": "página aberta no navegador (números calculados conferidos)",
                  "pedido": "só o código (--sem-navegador); números calculados pela página viram AVISO",
-                 "sem-navegador": "só o código: não achei Chrome/Chromium; números calculados pela página viram AVISO",
-                 "navegador-falhou": "só o código: o navegador não abriu a página; números calculados viram AVISO"}[modo]
+                 "sem-navegador": "só o código: nêo achei Chrome/Chromium; números calculados pela página viram AVISO",
+                 "navegador-falhou": "só o código: o navegador nêo abriu a página; números calculados viram AVISO"}[modo]
     print(f"Modo: {nota_modo}\n")
     for estado, msg in res:
         print(f"{estado:<6} {msg}")
