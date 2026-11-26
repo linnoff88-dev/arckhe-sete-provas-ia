@@ -6,7 +6,7 @@ Kit público: 7 prompts de teste em 3 formas (agente, chat, pessoa) e 3 idiomas,
 - Dados com semente fixa: `python3 kit/gerar_dados.py`. Mudou o gerador, conferir `python3 kit/limpar.py dados/vendas.csv` contra `dados/gabarito.json`.
 - Antes do push: `python3 kit/gerar_dados.py --conferir && python3 kit/montar.py --conferir`.
 - Kit sem fonte: nenhum link, autor ou aula de terceiro em README, guia, prompts ou posts. Ferramenta citada vira "exemplo: X".
-- Conta GitHub: inematds (autor `inematds <inematds@gmail.com>`).
+- Conta GitHub: linnoff88-dev (autor `linnoff88-dev <linnoff88-dev@gmail.com>`).
 
 ## Self-learning
 

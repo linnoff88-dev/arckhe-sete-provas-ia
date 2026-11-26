@@ -1,6 +1,6 @@
 # 7 Tests for Any AI
 
-[![7 Tests for Any AI](guia/assets/banner-en.jpg)](https://inematds.github.io/sete-provas-ia/guia/en/)
+[![7 Tests for Any AI](guia/assets/banner-en.jpg)](https://linnoff88-dev.github.io/arckhe-/guia/en/)
 
 **🇧🇷 [Português](README.md) · 🇺🇸 [English](README.en.md) · 🇪🇸 [Español](README.es.md)**
 
@@ -10,7 +10,7 @@ Seven ready-to-copy work assignments: a sales page, a sales dashboard, a present
 
 ## 📖 User guide
 
-Complete guide (landing page + step-by-step instructions, with a copy button for each prompt): **https://inematds.github.io/sete-provas-ia/guia/en/**
+Complete guide (landing page + step-by-step instructions, with a copy button for each prompt): **https://linnoff88-dev.github.io/arckhe-/guia/en/**
 
 ## The 7 tests
 
@@ -72,4 +72,4 @@ exemplos/chat-sonnet/                       real test in chat mode
 guia/                                       landing page + guide in PT/EN/ES
 ```
 
-MIT License. Part of the [INEMA.CLUB](https://inema.club) ecosystem.
+MIT License. Part of the [ARCKHÉ AI](https://ARCKHÉ AI) ecosystem.

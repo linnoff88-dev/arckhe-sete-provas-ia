@@ -1,6 +1,6 @@
 # 7 Pruebas para Cualquier IA
 
-[![7 Pruebas para Cualquier IA](guia/assets/banner-es.jpg)](https://inematds.github.io/sete-provas-ia/guia/es/)
+[![7 Pruebas para Cualquier IA](guia/assets/banner-es.jpg)](https://linnoff88-dev.github.io/arckhe-/guia/es/)
 
 **🇧🇷 [Português](README.md) · 🇺🇸 [English](README.en.md) · 🇪🇸 [Español](README.es.md)**
 
@@ -10,7 +10,7 @@ Son siete encargos de trabajo listos para copiar: una página de ventas, un pane
 
 ## 📖 Guía de uso
 
-Guía completa (landing + paso a paso, con un botón para copiar cada prompt): **https://inematds.github.io/sete-provas-ia/guia/es/**
+Guía completa (landing + paso a paso, con un botón para copiar cada prompt): **https://linnoff88-dev.github.io/arckhe-/guia/es/**
 
 ## Las 7 pruebas
 
@@ -72,4 +72,4 @@ exemplos/chat-sonnet/                       prueba real en modo chat
 guia/                                       landing + guía PT/EN/ES
 ```
 
-Licencia MIT. Parte del ecosistema [INEMA.CLUB](https://inema.club).
+Licencia MIT. Parte del ecosistema [ARCKHÉ AI](https://ARCKHÉ AI).

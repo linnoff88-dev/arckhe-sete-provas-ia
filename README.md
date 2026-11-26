@@ -6,7 +6,7 @@
 </div>
 
 
-[![7 Provas para Qualquer IA](guia/assets/banner.jpg)](https://inematds.github.io/sete-provas-ia/guia/)
+[![7 Provas para Qualquer IA](guia/assets/banner.jpg)](https://linnoff88-dev.github.io/arckhe-/guia/)
 
 **ê°Å¸â¡Â§ê°Å¸â¡Â· [PortuguêÂªs](README.md) êÂ· ê°Å¸â¡Âºê°Å¸â¡Â¸ [English](README.en.md) êÂ· ê°Å¸â¡Âªê°Å¸â¡Â¸ [EspaêÂ±ol](README.es.md)**
 
@@ -16,7 +16,7 @@ SêÂ£o sete pedidos de trabalho prontos para copiar: uma pêÂ¡gina de ve
 
 ## ê°Å¸ââ Guia de uso
 
-Guia completo (landing + passo a passo, com botêÂ£o de copiar em cada prompt): **https://inematds.github.io/sete-provas-ia/guia/**
+Guia completo (landing + passo a passo, com botêÂ£o de copiar em cada prompt): **https://linnoff88-dev.github.io/arckhe-/guia/**
 
 ## As 7 provas
 
@@ -78,7 +78,7 @@ exemplos/chat-sonnet/                       teste real no modo chat
 guia/                                       landing + guia PT/EN/ES
 ```
 
-LicenêÂ§a MIT. Parte do ecossistema [INEMA.CLUB](https://inema.club).
+LicenêÂ§a MIT. Parte do ecossistema [ARCKHÉ AI](https://ARCKHÉ AI).
 
 ---
 
